@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 350px;
+  height: 600px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.pic {
+  display: inline-block;
+  margin: auto;
+}
+
+.pic img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 22px;
+  font-weight: 600;
+  padding: 22px 0;
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 22px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 22px;
+  font-size: 15px;
+}
+
+.price {
+  width: 150px;
+  height: 20px;
+  color: hsl(178, 100%, 50%);
+}
+
+.time {
+  width: 150px;
+  height: 20px;
+  color: hsl(215, 51%, 70%);
+  text-align: right;
+}
+
+.price::before {
+  content: url('images/icon-ethereum.svg');
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.time::before {
+  content: url('images/icon-clock.svg');
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.line {
+  border-top: 1px solid hsl(215, 51%, 70%);
+  padding-bottom: 22px;
+}
+
+.avatar {
+  display: inline-block;
+  margin: auto;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.avatar img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.name {
+  color: hsl(215, 51%, 70%);
+  display: inline-block;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.name span {
+  color: hsl(0, 0%, 100%);
+}
